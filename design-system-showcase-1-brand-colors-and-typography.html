@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Colors & Typography</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1A1F36;
+            background-color: #F8FAFD;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* Section Styles */
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #E6E8F0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #8163DD, #3F64F2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Color Showcase */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .color-category {
+            margin-bottom: 32px;
+        }
+
+        .color-category-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1A1F36;
+        }
+
+        .color-item {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #E6E8F0;
+        }
+
+        .color-preview {
+            height: 100px;
+            display: flex;
+            align-items: flex-end;
+            padding: 12px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .color-info {
+            padding: 12px;
+            background: white;
+            font-size: 14px;
+        }
+
+        .color-name {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .color-hex {
+            color: #4E5D78;
+            font-family: monospace;
+        }
+
+        .color-usage {
+            font-size: 12px;
+            color: #4E5D78;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        /* Typography Showcase */
+        .type-example {
+            margin-bottom: 24px;
+            padding: 16px;
+            border: 1px solid #E6E8F0;
+            border-radius: 8px;
+        }
+
+        .type-info {
+            font-size: 12px;
+            color: #4E5D78;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #E6E8F0;
+        }
+
+        /* Font weight examples */
+        .weight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .weight-item {
+            padding: 12px;
+            border: 1px solid #E6E8F0;
+            border-radius: 8px;
+        }
+
+        /* Gradient Showcase */
+        .gradient-preview {
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* Line height examples */
+        .line-height-example {
+            padding: 16px;
+            border: 1px solid #E6E8F0;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">Design System: Colors & Typography</h1>
+
+        <!-- Brand Colors Section -->
+        <section class="section">
+            <h2 class="color-category-title">Core Brand Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #8163DD">Primary Purple</div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Purple</div>
+                        <div class="color-hex">#8163DD</div>
+                        <div class="color-usage">Primary CTAs, active states, brand elements</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #679FF0">Secondary Blue</div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary Blue</div>
+                        <div class="color-hex">#679FF0</div>
+                        <div class="color-usage">Secondary actions, supporting elements</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #3F64F2">Tertiary Blue</div>
+                    <div class="color-info">
+                        <div class="color-name">Tertiary Blue</div>
+                        <div class="color-hex">#3F64F2</div>
+                        <div class="color-usage">Accent elements, gradient endpoints</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="color-category-title">Neutral Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #F8FAFD; color: #1A1F36">Background</div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#F8FAFD</div>
+                        <div class="color-usage">Page backgrounds, subtle fills</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #FFFFFF; color: #1A1F36; border: 1px solid #E6E8F0">Surface</div>
+                    <div class="color-info">
+                        <div class="color-name">Surface</div>
+                        <div class="color-hex">#FFFFFF</div>
+                        <div class="color-usage">Cards and elevated elements</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #E6E8F0; color: #1A1F36">Border</div>
+                    <div class="color-info">
+                        <div class="color-name">Border</div>
+                        <div class="color-hex">#E6E8F0</div>
+                        <div class="color-usage">Borders and dividers</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="color-category-title">Text Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #1A1F36">Primary Text</div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Text</div>
+                        <div class="color-hex">#1A1F36</div>
+                        <div class="color-usage">Main body text, headings</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #4E5D78">Secondary Text</div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary Text</div>
+                        <div class="color-hex">#4E5D78</div>
+                        <div class="color-usage">Supporting text, labels</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #A6B1C2">Disabled Text</div>
+                    <div class="color-info">
+                        <div class="color-name">Disabled Text</div>
+                        <div class="color-hex">#A6B1C2</div>
+                        <div class="color-usage">Disabled states, placeholders</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="color-category-title">Gradients</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="gradient-preview" style="background: linear-gradient(135deg, #8163DD, #3F64F2)"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Gradient</div>
+                        <div class="color-hex">135deg, #8163DD → #3F64F2</div>
+                        <div class="color-usage">Key CTAs, important UI elements</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="section">
+            <h2 class="color-category-title">Typography</h2>
+            
+            <h3 class="color-category-title">Font Sizes</h3>
+            <div class="type-example">
+                <div style="font-size: 32px; line-height: 1.3;">Display Text (32px)</div>
+                <div class="type-info">Font-size: 32px (2rem) / Line-height: 1.3</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 24px; line-height: 1.3;">Heading 1 (24px)</div>
+                <div class="type-info">Font-size: 24px (1.5rem) / Line-height: 1.3</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 18px; line-height: 1.3;">Heading 2 (18px)</div>
+                <div class="type-info">Font-size: 18px (1.125rem) / Line-height: 1.3</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 16px; line-height: 1.5;">Heading 3 (16px)</div>
+                <div class="type-info">Font-size: 16px (1rem) / Line-height: 1.5</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 14px; line-height: 1.5;">Body Text (14px)</div>
+                <div class="type-info">Font-size: 14px (0.875rem) / Line-height: 1.5</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 12px; line-height: 1.5;">Small Text (12px)</div>
+                <div class="type-info">Font-size: 12px (0.75rem) / Line-height: 1.5</div>
+            </div>
+            <div class="type-example">
+                <div style="font-size: 10px; line-height: 1.5;">Micro Text (10px)</div>
+                <div class="type-info">Font-size: 10px (0.625rem) / Line-height: 1.5</div>
+            </div>
+
+            <h3 class="color-category-title">Font Weights</h3>
+            <div class="weight-grid">
+                <div class="weight-item">
+                    <div style="font-weight: 400;">Regular (400)</div>
+                    <div class="type-info">Main body text</div>
+                </div>
+                <div class="weight-item">
+                    <div style="font-weight: 500;">Medium (500)</div>
+                    <div class="type-info">Emphasized text, buttons</div>
+                </div>
+                <div class="weight-item">
+                    <div style="font-weight: 600;">Semi-bold (600)</div>
+                    <div class="type-info">Sub-headings</div>
+                </div>
+                <div class="weight-item">
+                    <div style="font-weight: 700;">Bold (700)</div>
+                    <div class="type-info">Main headings</div>
+                </div>
+            </div>
+
+            <h3 class="color-category-title">Line Heights</h3>
+            <div class="line-height-example">
+                <div style="line-height: 1.3; margin-bottom: 16px;">
+                    <div style="font-weight: 600; margin-bottom: 4px;">Tight (1.3)</div>
+                    <div style="color: #4E5D78;">Used for headings and short text blocks. This maintains a compact appearance while ensuring readability.</div>
+                </div>
+                <div style="line-height: 1.5; margin-bottom: 16px;">
+                    <div style="font-weight: 600; margin-bottom: 4px;">Normal (1.5)</div>
+                    <div style="color: #4E5D78;">Used for body text and general content. This provides comfortable reading with good spacing between lines.</div>
+                </div>
+                <div style="line-height: 1.7;">
+                    <div style="font-weight: 600; margin-bottom: 4px;">Relaxed (1.7)</div>
+                    <div style="color: #4E5D78;">Used for large text blocks and improved readability. This spacing helps readers track lines in dense paragraphs.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
